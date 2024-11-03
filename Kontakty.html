@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brovary nails-Контакти</title>
+    <style>
+        body {
+            display: flex;             
+            flex-direction: column;    /* Вертикальное выравнивание */
+            justify-content: center;    
+            align-items: center;        
+            margin: 0;                 /* Убираем отступы */
+        }
+
+        header {
+            width: 100%;               /* Ширина заголовка 100% */
+        }
+        nav {
+            background-color: #333;    /* Цвет фона для навигационной панели */
+            width: 100%;               /* Ширина 100% */
+            padding: 10px 0;           /* Отступы сверху и снизу */
+        }
+
+        nav ul {
+            list-style: none;          /* Убираем маркеры списка */
+            padding: 0;                /* Убираем отступы */
+            margin: 0;                 /* Убираем маржу */
+            display: flex;             /* Flexbox для горизонтального расположения */
+            justify-content: center;    /* Выравнивание элементов по центру */
+        }
+
+        nav ul li {
+            margin: 0 15px;           /* Отступы между элементами */
+        }
+
+        nav ul li a {
+            color: white;              /* Цвет текста */
+            text-decoration: none;     /* Убираем подчеркивание */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
+        .button-container {
+            display: flex; /* Используем flexbox для размещения кнопок в ряд */
+            gap: 15px; /* Отступ между кнопками */
+        }
+
+        .button {
+            padding: 10px 20px;            /* Внутренние отступы */
+            color: white;                  /* Цвет текста */
+            border: none;                  /* Убираем рамку */
+            border-radius: 5px;            /* Скругление углов */
+            cursor: pointer;                /* Указатель при наведении */
+            transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+        }
+
+        .instagram-button {
+            background-color: #E1306C;     /* Цвет фона Instagram */
+        }
+
+        .instagram-button:hover {
+            background-color: #C13584;      /* Цвет фона при наведении */
+        }
+
+        .tiktok-button {
+            background-color: #69C9EF;     /* Цвет фона TikTok */
+        }
+
+        .tiktok-button:hover {
+            background-color: #3E8E8E;      /* Цвет фона при наведении */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Праці</a></li>
+                <li><a href="Kontakty.html">Контакти</a></li>
+                <li><a href="Opus.html">Опис</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Контактна Інформація</h1>
+        <h2>Номер Телефона-Київстар</h2>
+        <a href="tel:+380970681275">097-068-1275</a>
+        <h2>Соц-Мережі</h2>
+        <div class="button-container">
+            <button class="button instagram-button" onclick="window.open('https://www.instagram.com/yevheniia_solokhina/', '_blank')">Перейти в Instagram</button>
+            <button class="button tiktok-button" onclick="window.open('https://www.tiktok.com/@brovary_nails', '_blank')">Перейти в TikTok</button>
+        </div>
+
+    </main>
+</body>
+</html>
